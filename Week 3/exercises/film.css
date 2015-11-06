@@ -1,0 +1,61 @@
+article{
+	width: 1000px;
+	height: 1000px;
+	margin:auto;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+aside {
+	width: 440px;
+	height: 600px;
+	float:left;
+	margin: 10px;
+}
+
+section{
+	width: 440px;
+	height: 600px;
+	float:left;
+	margin:10px;
+}
+
+#under{
+	width: 940px;
+	height: 300px;
+	padding:10px;
+	margin-bottom:10px;
+	float:left;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+h1{
+	margin: 10px;
+}
+
+h2{
+	margin:0;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+ul.wiki li{
+		float:left;
+		padding-right: 20px;
+		color:blue;
+	}
+
+	ul.wiki li a{
+		color:blue;
+	}

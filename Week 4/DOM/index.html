@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.on{
+			background-color: #0F0;
+		}
+		.off{
+			background-color: #AAA;
+		}
+		.highlight{
+			border: 5px dashed blue;
+		}
+	</style>
+</head>
+<body>
+	<pre id = "results">The results area.</pre>
+	<p>This paragraph<strong>contais markup</strong></p>
+	<p class="test on">Testing text 1</p>
+	<p class="test off">Testing text 2</p>
+	<article data-document-author="Salva">
+		<h1>The firefox!</h1>
+		<p>The firefox is a cute animal that lives in blah blah blah...</p>
+	</article>
+</body>
+</html>
+
+
+
+<!--
+var livelist = document.getElementByTagName('p'); => obtengo un string de los p's de index.html
+
+var array = Array.prototype.slice.call(livelist); => lo convierto en un array
+
+for (var i = 0; i < livelist.length; i++){
+	console.log(livelist[i].textContent);
+} => recorro el array y lo muestro
+
+var paragraphs = documents.getElementsByTagName('p');
+paragraphs.length;
+
+var test = document.getElementsByClassName('test');
+Array.isArray(paragraphs); => will be false
+
+var articleParagraph = document.querySelector('article').querySelector('p'); => <p>The firefox is a cute animal...</p>
+
+var aritcleHeader = document.querySelector('article h1');
+
+
+=>Create a new element
+var horizontalRule = document.createElement('hr');
+=>To add an element to aanother (body)
+document.body.appendChild(horizontalRule);
+=>To remove the element you need to acess the parent node
+horizontalRule.parentNode.removeChild(horizontalRule);
+=>To add an elemente before another
+var secondParagraph = document.querySelector('p:nth-of-type(2)');
+secondParagraph.parentNode.insertBefore(horizontalRule, secondParagraph);
+
+=> element after
+secondParagraph.parentNode.insertBefore(horizontalRule,secondParagraph.nextSibling);
+
+
+
+
+
+
+
+-->
+

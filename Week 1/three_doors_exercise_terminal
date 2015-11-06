@@ -1,0 +1,984 @@
+Last login: Thu Oct  1 22:31:33 on console
+MacBook-Air-de-Iago:~ iagomoure$ pwd
+/Users/iagomoure
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+MacBook-Air-de-Iago:~ iagomoure$ cd Do
+-bash: cd: Do: No such file or directory
+MacBook-Air-de-Iago:~ iagomoure$ cd Documents/
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Ironhack
+MacBook-Air-de-Iago:Documents iagomoure$ cd Ironhack/
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	MyProject
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd ..
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Ironhack
+MacBook-Air-de-Iago:Documents iagomoure$ cd ..
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Music
+Desktop		Library		Pictures
+Documents	Movies		Public
+MacBook-Air-de-Iago:~ iagomoure$ ls Documents/
+Ironhack
+MacBook-Air-de-Iago:~ iagomoure$ ls -alh
+total 80
+drwxr-xr-x+  24 iagomoure  staff   816B  2 oct 00:32 .
+drwxr-xr-x    6 root       admin   204B 30 sep 20:57 ..
+-rw-r--r--    1 iagomoure  staff   266B 22 may 10:33 .498731.padl
+-r--------    1 iagomoure  staff     7B 20 feb  2015 .CFUserTextEncoding
+-rw-r--r--@   1 iagomoure  staff    16K  2 oct 00:41 .DS_Store
+drwx------    4 iagomoure  staff   136B  2 oct 00:30 .Trash
+-rw-------    1 iagomoure  staff   3,7K 30 sep 03:28 .bash_history
+drwxr-xr-x    3 iagomoure  staff   102B  2 oct 00:32 .bash_sessions
+drwxr-xr-x    4 iagomoure  staff   136B 29 sep 01:47 .cache
+drwx------    4 iagomoure  staff   136B 18 sep 19:57 .config
+drwx------    3 iagomoure  staff   102B 11 ago 12:26 .cups
+-rw-r--r--    1 iagomoure  staff    54B 29 sep 17:43 .gitconfig
+drwxr-xr-x    3 iagomoure  staff   102B 10 jul 18:36 .local
+drwxr-xr-x  182 iagomoure  staff   6,0K 10 jul 18:12 .npm
+-rw-------    1 root       staff   1,0K  5 may 06:34 .rnd
+drwx------    5 iagomoure  staff   170B 24 sep 12:46 Applications
+drwx------+   4 iagomoure  staff   136B  2 oct 00:30 Desktop
+drwx------+   5 iagomoure  staff   170B 30 sep 21:54 Documents
+drwx------+   7 iagomoure  staff   238B  2 oct 00:47 Downloads
+drwx------@  56 iagomoure  staff   1,9K 30 sep 21:08 Library
+drwx------+   7 iagomoure  staff   238B 10 abr 16:20 Movies
+drwx------+   7 iagomoure  staff   238B  4 sep 19:06 Music
+drwx------+   7 iagomoure  staff   238B  1 oct 01:41 Pictures
+drwxr-xr-x+   5 iagomoure  staff   170B 20 feb  2015 Public
+MacBook-Air-de-Iago:~ iagomoure$ cd Ironhack/
+-bash: cd: Ironhack/: No such file or directory
+MacBook-Air-de-Iago:~ iagomoure$ cd ../../other
+-bash: cd: ../../other: No such file or directory
+MacBook-Air-de-Iago:~ iagomoure$ cd ../..
+MacBook-Air-de-Iago:/ iagomoure$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+MacBook-Air-de-Iago:/ iagomoure$ cd Users/
+MacBook-Air-de-Iago:Users iagomoure$ ls
+Guest		Shared		iagomoure
+MacBook-Air-de-Iago:Users iagomoure$ cd iagomoure/
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Music
+Desktop		Library		Pictures
+Documents	Movies		Public
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Music
+Desktop		Library		Pictures
+Documents	Movies		Public
+MacBook-Air-de-Iago:~ iagomoure$ mkdir -p Documents/Ironhack
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Music
+Desktop		Library		Pictures
+Documents	Movies		Public
+MacBook-Air-de-Iago:~ iagomoure$ cd Do
+Documents/ Downloads/ 
+MacBook-Air-de-Iago:~ iagomoure$ cd Documents/
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Ironhack	Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ cd Ironhanck/
+MacBook-Air-de-Iago:Ironhanck iagomoure$ ls
+Exercises	MyProject
+MacBook-Air-de-Iago:Ironhanck iagomoure$ cd MyProject/
+MacBook-Air-de-Iago:MyProject iagomoure$ ls
+Readme.txt
+MacBook-Air-de-Iago:MyProject iagomoure$ open Readme.txt 
+MacBook-Air-de-Iago:MyProject iagomoure$ more Readme.txt 
+MacBook-Air-de-Iago:MyProject iagomoure$ cd..
+-bash: cd..: command not found
+MacBook-Air-de-Iago:MyProject iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhanck iagomoure$ ls
+Exercises	MyProject
+MacBook-Air-de-Iago:Ironhanck iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	git-practice	gittest		second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ more first.txt 
+MacBook-Air-de-Iago:Exercises iagomoure$ more git-practice/
+git-practice/ is a directory
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -alh
+total 24
+drwxr-xr-x   8 iagomoure  staff   272B 30 sep 02:06 .
+drwxr-xr-x   5 iagomoure  staff   170B 30 sep 01:25 ..
+-rw-r--r--@  1 iagomoure  staff   8,0K 30 sep 02:26 .DS_Store
+drwxr-xr-x  10 iagomoure  staff   340B 30 sep 02:04 .git
+-rw-r--r--   1 iagomoure  staff     0B 29 sep 17:28 first.txt
+drwxr-xr-x   8 iagomoure  staff   272B 30 sep 03:07 git-practice
+drwxr-xr-x   5 iagomoure  staff   170B 30 sep 02:00 gittest
+-rw-r--r--   1 iagomoure  staff     0B 29 sep 17:29 second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd git-practice/
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+first_choice.txt	second_choice.txt
+git-practice		three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ more first_choice.txt 
+diff --git a/three_doors.txt b/three_doors.txt
+index fad3997..914ca3a 100644
+--- a/three_doors.txt
++++ b/three_doors.txt
+@@ -1,2 +1,3 @@
+ you are in a room with three doors.
+-Which door will you go through?
+\ No newline at end of file
++Which door will you go through?
++I will go through four door
+\ No newline at end of file
+MacBook-Air-de-Iago:git-practice iagomoure$ pwd
+/Users/iagomoure/Documents/Ironhanck/Exercises/git-practice
+MacBook-Air-de-Iago:git-practice iagomoure$ cd ../../..
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Ironhack	Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ hostname
+MacBook-Air-de-Iago.local
+MacBook-Air-de-Iago:Documents iagomoure$ ls -alh
+total 16
+drwx------+  6 iagomoure  staff   204B  2 oct 00:53 .
+drwxr-xr-x+ 24 iagomoure  staff   816B  2 oct 00:32 ..
+-rw-r--r--@  1 iagomoure  staff   6,0K  2 oct 00:52 .DS_Store
+-rw-------   1 iagomoure  staff     0B 20 feb  2015 .localized
+drwxr-xr-x   2 iagomoure  staff    68B  2 oct 00:53 Ironhack
+drwxr-xr-x   5 iagomoure  staff   170B 30 sep 01:25 Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ clear
+
+MacBook-Air-de-Iago:Documents iagomoure$ pwd
+/Users/iagomoure/Documents
+MacBook-Air-de-Iago:Documents iagomoure$ ls -alh
+total 16
+drwx------+  6 iagomoure  staff   204B  2 oct 00:53 .
+drwxr-xr-x+ 24 iagomoure  staff   816B  2 oct 00:32 ..
+-rw-r--r--@  1 iagomoure  staff   6,0K  2 oct 00:52 .DS_Store
+-rw-------   1 iagomoure  staff     0B 20 feb  2015 .localized
+drwxr-xr-x   2 iagomoure  staff    68B  2 oct 00:53 Ironhack
+drwxr-xr-x   5 iagomoure  staff   170B 30 sep 01:25 Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ cd Ironhack
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+MacBook-Air-de-Iago:Ironhack iagomoure$ mkdir Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd ..
+MacBook-Air-de-Iago:Documents iagomoure$ mkdir Exercises
+MacBook-Air-de-Iago:Documents iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ touch first.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ open first.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ mkdir second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ mkdir third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -l
+total 0
+-rw-r--r--  1 iagomoure  staff   0  2 oct 01:04 first.txt
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 second.txt
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ mv second.txt projects
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -l
+total 0
+-rw-r--r--  1 iagomoure  staff   0  2 oct 01:04 first.txt
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 projects
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ mv projects second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -l
+total 0
+-rw-r--r--  1 iagomoure  staff   0  2 oct 01:04 first.txt
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 second.txt
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:05 third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Exercises	Ironhack	Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ cd Ironhack
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd ..
+MacBook-Air-de-Iago:Documents iagomoure$ ls
+Exercises	Ironhack	Ironhanck
+MacBook-Air-de-Iago:Documents iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt	third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Documents iagomoure$ cd ..
+MacBook-Air-de-Iago:~ iagomoure$ pwd
+/Users/iagomoure
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Music
+Desktop		Library		Pictures
+Documents	Movies		Public
+MacBook-Air-de-Iago:~ iagomoure$ mkdir Ironhack
+MacBook-Air-de-Iago:~ iagomoure$ ls -l
+total 0
+drwx------   5 iagomoure  staff   170 24 sep 12:46 Applications
+drwx------+  4 iagomoure  staff   136  2 oct 00:30 Desktop
+drwx------+  5 iagomoure  staff   170  2 oct 01:07 Documents
+drwx------+  7 iagomoure  staff   238  2 oct 00:47 Downloads
+drwxr-xr-x   2 iagomoure  staff    68  2 oct 01:08 Ironhack
+drwx------@ 56 iagomoure  staff  1904 30 sep 21:08 Library
+drwx------+  7 iagomoure  staff   238 10 abr 16:20 Movies
+drwx------+  7 iagomoure  staff   238  4 sep 19:06 Music
+drwx------+  7 iagomoure  staff   238  1 oct 01:41 Pictures
+drwxr-xr-x+  5 iagomoure  staff   170 20 feb  2015 Public
+MacBook-Air-de-Iago:~ iagomoure$ mkdir -p Ironhack/Projects
+MacBook-Air-de-Iago:~ iagomoure$ mkdir -p Ironhack/Exercises
+MacBook-Air-de-Iago:~ iagomoure$ ls -l
+total 0
+drwx------   5 iagomoure  staff   170 24 sep 12:46 Applications
+drwx------+  4 iagomoure  staff   136  2 oct 00:30 Desktop
+drwx------+  5 iagomoure  staff   170  2 oct 01:07 Documents
+drwx------+  7 iagomoure  staff   238  2 oct 00:47 Downloads
+drwxr-xr-x   4 iagomoure  staff   136  2 oct 01:09 Ironhack
+drwx------@ 56 iagomoure  staff  1904 30 sep 21:08 Library
+drwx------+  7 iagomoure  staff   238 10 abr 16:20 Movies
+drwx------+  7 iagomoure  staff   238  4 sep 19:06 Music
+drwx------+  7 iagomoure  staff   238  1 oct 01:41 Pictures
+drwxr-xr-x+  5 iagomoure  staff   170 20 feb  2015 Public
+MacBook-Air-de-Iago:~ iagomoure$ cd Ironhack/
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls -l
+total 0
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:09 Exercises
+drwxr-xr-x  2 iagomoure  staff  68  2 oct 01:08 Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+MacBook-Air-de-Iago:Exercises iagomoure$ touch first.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ open first.txt 
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ touch second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ touch third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -alh
+total 0
+drwxr-xr-x  5 iagomoure  staff   170B  2 oct 01:09 .
+drwxr-xr-x  4 iagomoure  staff   136B  2 oct 01:09 ..
+-rw-r--r--  1 iagomoure  staff     0B  2 oct 01:09 first.txt
+-rw-r--r--  1 iagomoure  staff     0B  2 oct 01:09 second.txt
+-rw-r--r--  1 iagomoure  staff     0B  2 oct 01:09 third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ pwd
+/Users/iagomoure/Ironhack/Exercises
+MacBook-Air-de-Iago:Exercises iagomoure$ mv second.txt /Users/iagomoure/Ironhack/Projects/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls -l
+total 0
+-rw-r--r--  1 iagomoure  staff  0  2 oct 01:09 first.txt
+-rw-r--r--  1 iagomoure  staff  0  2 oct 01:09 third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd  ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	third.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ mv third.txt second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ pwd
+/Users/iagomoure/Ironhack
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ pwd
+/Users/iagomoure/Ironhack/Exercises
+MacBook-Air-de-Iago:Exercises iagomoure$ cp first.txt /Users/iagomoure/Ironhack/Projects/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Exercises/
+MacBook-Air-de-Iago:Exercises iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Exercises iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls -alh
+total 0
+drwxr-xr-x   4 iagomoure  staff   136B  2 oct 01:09 .
+drwxr-xr-x+ 25 iagomoure  staff   850B  2 oct 01:08 ..
+drwxr-xr-x   4 iagomoure  staff   136B  2 oct 01:13 Exercises
+drwxr-xr-x   4 iagomoure  staff   136B  2 oct 01:16 Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd Projects/
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+first.txt	second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ pwsd
+-bash: pwsd: command not found
+MacBook-Air-de-Iago:Projects iagomoure$ pwd
+/Users/iagomoure/Ironhack/Projects
+MacBook-Air-de-Iago:Projects iagomoure$ ls -l
+total 0
+-rw-r--r--  1 iagomoure  staff  0  2 oct 01:16 first.txt
+-rw-r--r--  1 iagomoure  staff  0  2 oct 01:09 second.txt
+MacBook-Air-de-Iago:Projects iagomoure$ rm first.txt 
+MacBook-Air-de-Iago:Projects iagomoure$ rm second.txt 
+MacBook-Air-de-Iago:Projects iagomoure$ ls
+MacBook-Air-de-Iago:Projects iagomoure$ cd ..
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises	Projects
+MacBook-Air-de-Iago:Ironhack iagomoure$ rm -p Projects/
+rm: illegal option -- p
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+MacBook-Air-de-Iago:Ironhack iagomoure$ rmdir Projects/
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd ..
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Movies		Public
+Desktop		Ironhack	Music
+Documents	Library		Pictures
+MacBook-Air-de-Iago:~ iagomoure$ cd Ironhack/
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises
+MacBook-Air-de-Iago:Ironhack iagomoure$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+MacBook-Air-de-Iago:Ironhack iagomoure$ git config --list
+user.name=Iago Moure
+user.mail=iago_moure@yahoo.es
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd ..
+MacBook-Air-de-Iago:~ iagomoure$ ls
+Applications	Downloads	Movies		Public
+Desktop		Ironhack	Music
+Documents	Library		Pictures
+MacBook-Air-de-Iago:~ iagomoure$ cd Ironhack/
+MacBook-Air-de-Iago:Ironhack iagomoure$ ls
+Exercises
+MacBook-Air-de-Iago:Ironhack iagomoure$ mkdir git-practice
+MacBook-Air-de-Iago:Ironhack iagomoure$ pwd
+/Users/iagomoure/Ironhack
+MacBook-Air-de-Iago:Ironhack iagomoure$ cd git-practice/
+MacBook-Air-de-Iago:git-practice iagomoure$ git init
+Initialized empty Git repository in /Users/iagomoure/Ironhack/git-practice/.git/
+MacBook-Air-de-Iago:git-practice iagomoure$ touch three doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+doors.txt	three
+MacBook-Air-de-Iago:git-practice iagomoure$ rm doors.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ rm three 
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+MacBook-Air-de-Iago:git-practice iagomoure$ touch three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ open three_doors.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git add three_doors.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "first commit"
+[master (root-commit) a90cdbc] first commit
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   three_doors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "add changes three_doors"
+On branch master
+Changes not staged for commit:
+	modified:   three_doors.txt
+
+no changes added to commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   three_doors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "add changes threedoors"
+On branch master
+Changes not staged for commit:
+	modified:   three_doors.txt
+
+no changes added to commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git add three_doors.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "add new changes"
+[master 2a8e062] add new changes
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git diff
+diff --git a/three_doors.txt b/three_doors.txt
+index e3e8e5b..10a3bd4 100644
+--- a/three_doors.txt
++++ b/three_doors.txt
+@@ -1,2 +1,3 @@
+ You are in a room with three doors.
+-Which door will you go through?
+\ No newline at end of file
++Which door will you go through?
++I will go through the three number door
+\ No newline at end of file
+MacBook-Air-de-Iago:git-practice iagomoure$ touch first_choice.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ open first_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ open first_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	first_choice.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Iago:git-practice iagomoure$ git rm three_doors.txt --cached
+rm 'three_doors.txt'
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	first_choice.txt
+	three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git add first_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   first_choice.txt
+	deleted:    three_doors.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "only commit fisrtchoice"
+[master bdcd73f] only commit fisrtchoice
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+ create mode 100644 first_choice.txt
+ delete mode 100644 three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit bdcd73ff9ca6d906408a65e8ec4f354c571d020d
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:12:49 2015 +0200
+
+    only commit fisrtchoice
+
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+first_choice.txt	three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ touch second_choice.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ open second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ open second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	second_choice.txt
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git add second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   second_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "commit secondchoice"
+[master f49c14e] commit secondchoice
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 second_choice.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit f49c14e8fcac1e5364722f86612a6ddb0881992f
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:18:10 2015 +0200
+
+    commit secondchoice
+
+commit bdcd73ff9ca6d906408a65e8ec4f354c571d020d
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:12:49 2015 +0200
+
+    only commit fisrtchoice
+
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   second_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "add changes secondchoice"
+On branch master
+Changes not staged for commit:
+	modified:   second_choice.txt
+
+Untracked files:
+	.DS_Store
+	three_doors.txt
+
+no changes added to commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git add second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+first_choice.txt	second_choice.txt	three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   second_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "add changes secondchoice"
+[master 616b427] add changes secondchoice
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit 616b4270a8068b94afefc8a258eb7a83ae52a038
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:22:51 2015 +0200
+
+    add changes secondchoice
+
+commit f49c14e8fcac1e5364722f86612a6ddb0881992f
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:18:10 2015 +0200
+
+    commit secondchoice
+
+commit bdcd73ff9ca6d906408a65e8ec4f354c571d020d
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:12:49 2015 +0200
+
+    only commit fisrtchoice
+
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git branch
+* master
+MacBook-Air-de-Iago:git-practice iagomoure$ git branch -a
+* master
+MacBook-Air-de-Iago:git-practice iagomoure$ git branch new
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git branch
+* master
+  new
+MacBook-Air-de-Iago:git-practice iagomoure$ git checkout new
+Switched to branch 'new'
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch new
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ ls
+first_choice.txt	second_choice.txt	three_doors.txt
+MacBook-Air-de-Iago:git-practice iagomoure$ open second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch new
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   second_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+MacBook-Air-de-Iago:git-practice iagomoure$ git add second_choice.txt 
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch new
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   second_choice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+MacBook-Air-de-Iago:git-practice iagomoure$ git commit -m "alternative behind secondchoice"
+[new 8c0b2df] alternative behind secondchoice
+ Committer: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit 8c0b2df9925adfec002e39a9549c12e4042bcb2b
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:30:42 2015 +0200
+
+    alternative behind secondchoice
+
+commit 616b4270a8068b94afefc8a258eb7a83ae52a038
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:22:51 2015 +0200
+
+    add changes secondchoice
+
+commit f49c14e8fcac1e5364722f86612a6ddb0881992f
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:18:10 2015 +0200
+
+    commit secondchoice
+
+commit bdcd73ff9ca6d906408a65e8ec4f354c571d020d
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:12:49 2015 +0200
+
+    only commit fisrtchoice
+
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ git merge new
+Already up-to-date.
+MacBook-Air-de-Iago:git-practice iagomoure$ git status
+On branch new
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	three_doors.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Air-de-Iago:git-practice iagomoure$ git log
+commit 8c0b2df9925adfec002e39a9549c12e4042bcb2b
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:30:42 2015 +0200
+
+    alternative behind secondchoice
+
+commit 616b4270a8068b94afefc8a258eb7a83ae52a038
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:22:51 2015 +0200
+
+    add changes secondchoice
+
+commit f49c14e8fcac1e5364722f86612a6ddb0881992f
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:18:10 2015 +0200
+
+    commit secondchoice
+
+commit bdcd73ff9ca6d906408a65e8ec4f354c571d020d
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:12:49 2015 +0200
+
+    only commit fisrtchoice
+
+commit 2a8e06208083b0195ebe473b1ce596141edba2dd
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 03:01:27 2015 +0200
+
+    add new changes
+
+commit a90cdbcf75a80ae6bd54f525a505f6ecfc207c30
+Author: Iago Moure <iagomoure@MacBook-Air-de-Iago.local>
+Date:   Fri Oct 2 02:57:41 2015 +0200
+
+    first commit
+MacBook-Air-de-Iago:git-practice iagomoure$ 

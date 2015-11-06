@@ -1,0 +1,33 @@
+header{
+	color: #888800;
+	font-size: 28px;
+	background-color: #0000FF;
+}
+
+footer{
+	color:orange;
+}
+
+	footer p{
+		background-color: black;
+	}
+
+body{
+	background-color: grey;
+	font-family: "Baskerville";
+}
+
+p{
+	background-color: grey;
+	font-family: "Baskerville";
+}
+
+.niceParagraph, span{
+	background-color: grey;
+	font-family: "Baskerville";
+}
+
+#finalParagraph{
+	background-color: grey;
+	font-family: "Baskerville";
+}
